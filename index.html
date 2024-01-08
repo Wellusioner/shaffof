@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shaffof Qurilish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@500;700&display=swap');
+    
+    html, body{
+      overflow-x: hidden;
+      color: #1F2F56;
+    }
+    .font-roboto{
+      font-family: 'Roboto', sans-serif;
+    }
+    .font-montserrat{
+      font-family: 'Montserrat', sans-serif;
+    }
+    ul,ol,li{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .project-title{
+      position: relative;
+      color: #1F2F56;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 21px;
+/*      transition: color 0.1s linear;*/
+    }
+    .project-title:hover{
+      color: #5A87F9;
+    }
+    .project-title:active{
+      color: #31CC82;
+    }
+    .group1 .icon-wrapper{
+      display: inline-block;
+      text-align: end;
+      width: auto;
+      min-width: 100px;
+      margin-left: 20px;
+      transform: scale(1);
+      transition: 0.1s linear;
+    }
+    .group2 .icon-wrapper{
+      display: inline-block;
+      width: auto;
+      min-width: 86px;
+      margin-right: 20px;
+      transform: scale(1);
+      transition: 0.1s linear;
+    }
+    .project-title:hover .icon-wrapper,
+    .project-title:hover .bottom-icon{
+      transform: scale(1.2);
+    }
+    .group1 li:first-child a,
+    .group1 li:last-child a{
+      right: -60px;
+    }
+    
+    .group2 li:first-child a,
+    .group2 li:last-child a{
+      right: 60px;
+    }
+    .project-group li:not(:last-child){
+      margin-bottom: 60px;
+    }
+    .icon-line{
+      position: absolute;
+      z-index: 1;
+    }
+    .group1 li:first-child .icon-line{
+      right: -41%;
+      top: 67%;
+    }
+    .group1 li:nth-child(2) .icon-line{
+      right: -35%;
+      top: 45%;
+    }
+    .group1 li:nth-child(3) .icon-line{
+      right: -34%;
+      top: 10%;
+    }
+    .group1 li:nth-child(4) .icon-line{
+      right: -42%;
+      top: -45%;
+    }
+    
+    .group2 li:first-child .icon-line{
+      left: -41%;
+      top: 67%;
+    }
+    .group2 li:nth-child(2) .icon-line{
+      left: -32%;
+      top: 45%;
+    }
+    .group2 li:nth-child(3) .icon-line{
+      left: -40%;
+      top: 10%;
+    }
+    .group2 li:nth-child(4) .icon-line{
+      left: -42%;
+      top: -45%;
+    }
+    .bottom-icon{
+      transform: scale(1);
+      transition: 0.1s linear;
+    }
+    
+    .icon-alone{
+      right: 47%;
+      top: -65%;
+    }
+    
+    .main-title{
+      display: inline-block;
+      position: absolute;
+      font-family: 'Roboto', sans-serif;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 25px;
+      line-height: 26px;
+      color: #1F2F56;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+/*      transition: 0.1s linear;*/
+    }
+    .main-title:hover{
+      color: #5A87F9;
+    }
+    .main-title:active{
+      color: #31CC82;
+    }
+    .chart-item .chart-img{
+      border: 1px solid #fff;
+      border-radius: 6px;
+      transition: border 0.2s linear;
+    }
+/*
+    .chart-item:hover .chart-img{
+      border: 1px solid #31CC82;
+    }
+*/
+    
+    .spot{
+      position: absolute;
+      transition: transform 0.2s linear;
+      transform: scale(0.5);
+    }
+    .chart-item:hover .spot{
+      transform: scale(1.1);
+    }
+    .spot1{
+      bottom: 27%;
+      left: 15%;
+    }
+    .spot2{
+      bottom: 47%;
+      left: 47%;
+    }
+    .spot3{
+      bottom: 36%;
+      right: 21%;
+    }
+    .spot4{
+      bottom: 11%;
+      left: 15%;
+    }
+    .spot5{
+      bottom: 29%;
+      left: 47%;
+    }
+    .spot6{
+      bottom: 16%;
+      right: 22%;
+    }
+    .spot7{
+      bottom: 35%;
+      left: 24%;
+    }
+    .spot8{
+      bottom: 24%;
+      right: 26%;
+    }
+    .spot9{
+      bottom: 37%;
+      left: 31%;
+    }
+    .spot10{
+      bottom: 27%;
+      right: 25%;
+    }
+    
+    .spot11{
+      bottom: 18%;
+      left: 24%;
+    }
+    .spot12{
+      bottom: 43%;
+      left: 46%;
+    }
+    .spot13{
+      top: 36%;
+      right: 22%;
+    }
+    .spot14{
+      bottom: 18%;
+      left: 25%;
+    }
+    .spot15{
+      bottom: 33%;
+      right: 28%;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="pt-2">
+    <header class="position-relative">
+    <img class="position-absolute top-0 left-0 w-100" style="height: 116px;" src="./images/header2.png" alt="">
+    <div class="position-relative d-flex justify-content-between align-items-center pt-3 mx-auto px-2" style="max-width: 2000px;">
+      <div class="position-relative" style="top: -5px;">
+        <img src="./images/logo2.svg" alt="">
+      </div>
+      <span class="position-relative text-white text-uppercase font-montserrat fw-bold fs-4" style="top: 5px;">«ШАФФОФ ҚУРИЛИШ» Миллий ахборот тизими</span>
+    </div>
+  </header>
+  <main class="pt-5">
+    <section class="py-5 mx-auto" style="max-width: 1700px;">
+     <div class="row">
+       <div class="col-lg-4">
+         <ul class="project-group group1">
+           <li  class="text-end">
+             <a class="d-inline-flex align-items-center project-title" href="https://ccnis.uz/" target="_blank">
+               <span>Қурилишда давлат назорати <br> ахборот тизими</span>
+               <span class="icon-wrapper"><img src="./images/icon9.svg" alt=""></span>
+               <span class="icon-line"><img src="./images/line1.svg" alt=""></span>
+             </a>
+           </li>
+           <li  class="text-end">
+             <a class="d-inline-flex align-items-center project-title" href="https://sert.mc.uz/" target="_blank">
+               <span>Шаҳарсозлик ва уй-жой <br> коммунал хўжалиги <br> соҳаларида мутахассисларни <br> сертификатлаш <br> тизими</span>
+               <span class="icon-wrapper"><img src="./images/icon8.svg" alt=""></span>
+               <span class="icon-line"><img src="./images/line2.svg" alt=""></span>
+             </a>
+           </li>
+           <li  class="text-end"><a class="d-inline-flex align-items-center project-title" href="https://meninguyim.mjko.uz/" target="_blank">
+             <span>«Менинг уйим» <br> автоматлаштирилган биллинг <br> ахборот тизими</span>
+             <span class="icon-wrapper"><img src="./images/icon7.svg" alt=""></span>
+             <span class="icon-line"><img src="./images/line3.svg" alt=""></span>
+           </a></li>
+           <li  class="text-end"><a class="d-inline-flex align-items-center project-title" href="https://catalog.tmsiti.uz/" target="_blank">
+             <span>Классификатор ва шнқлар</span>
+             <span class="icon-wrapper"><img src="./images/icon6.svg" alt=""></span>
+             <span class="icon-line"><img src="./images/line4.svg" alt=""></span>
+           </a></li>
+         </ul>
+       </div>
+       <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative">
+         <a href="https://monitoring.mc.uz/" target="_blank" class="main-title">«Шаффоф Қурилиш» <br> миллий ахборот <br> тизими</a>
+         <img src="./images/circle.svg" alt="">
+       </div>
+       <div class="col-lg-4">
+         <ul class="project-group group2">           
+           <li>
+             <a class="d-inline-flex align-items-center project-title" href="https://dx.mc.uz" target="_blank">
+               <span class="icon-wrapper"><img src="./images/icon1.svg" alt=""></span>
+               <span>Қурилиш сохасидаги давлат <br> хизматлари ахборот тизими</span>
+               <span class="icon-line"><img src="./images/line9.svg" alt=""></span>
+             </a>
+           </li>
+           <li>
+             <a class="d-inline-flex align-items-center project-title" href="https://reyting.mc.uz" target="_blank">
+               <span class="icon-wrapper"><img src="./images/icon2.svg" alt=""></span>
+               <span>Қурилиш-пудрат ташкилотларининг <br> рейтингини аниқлаш тизими</span>
+               <span class="icon-line"><img src="./images/line8.svg" alt=""></span>
+             </a>
+           </li>
+           <li><a class="d-inline-flex align-items-center project-title" href="https://tender.mc.uz" target="_blank">
+             <span class="icon-wrapper"><img src="./images/icon3.svg" alt=""></span>
+             <span>Қурилиш ишлари тендер <br> платформаси</span>
+             <span class="icon-line"><img src="./images/line7.svg" alt=""></span>
+           </a></li>
+           <li><a class="d-inline-flex align-items-center project-title" href="https://new-ekspertiza.mc.uz" target="_blank">
+             <span class="icon-wrapper"><img src="./images/icon4.svg" alt=""></span>
+             <span>Лойиҳа-смета ҳужжатлари <br> экспертизаси</span>
+             <span class="icon-line"><img src="./images/line6.svg" alt=""></span>
+           </a></li>
+         </ul>
+       </div>
+     </div>
+     <div class="text-center">
+       <a class="position-relative d-inline-flex align-items-center flex-column project-title" href="https://edo.ijro.uz/" target="_blank" style="top: -35px;">
+         <img class="bottom-icon mb-3" src="./images/icon5.svg" alt="">
+         <span>Хужжатлар айланиши</span>
+         <span class="icon-line icon-alone"><img src="./images/line5.svg" alt=""></span>
+       </a>
+     </div>
+    </section>
+  </main>
+  <section id="chart-section" class="mx-auto py-3 px-2" style="max-width: 2000px;">
+    <div id="chart-group" class="row flex-nowrap">
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart1.svg" alt="">
+          <img class="spot spot1" src="./images/spot1.svg" alt="">
+          <img class="spot spot2" src="./images/spot1.svg" alt="">
+          <img class="spot spot3" src="./images/spot1.svg" alt="">
+          <img class="spot spot4" src="./images/spot2.svg" alt="">
+          <img class="spot spot5" src="./images/spot2.svg" alt="">
+          <img class="spot spot6" src="./images/spot2.svg" alt="">
+        </div>
+      </div>
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart2.svg" alt="">
+        </div>
+      </div>
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart3.svg" alt="">
+          <img class="spot spot7" src="./images/spot1.svg" alt="">
+          <img class="spot spot8" src="./images/spot1.svg" alt="">
+        </div>
+      </div>
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart4.svg" alt="">
+          <img class="spot spot9" src="./images/spot1.svg" alt="">
+          <img class="spot spot10" src="./images/spot1.svg" alt="">
+        </div>
+      </div>
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart5.svg" alt="">
+          <img class="spot spot11" src="./images/spot1.svg" alt="">
+          <img class="spot spot12" src="./images/spot1.svg" alt="">
+          <img class="spot spot13" src="./images/spot1.svg" alt="">
+        </div>
+      </div>
+      <div class="chart-item col-auto active">
+        <div class="position-relative">
+          <img class="chart-img w-auto" src="./images/chart6.svg" alt="">
+          <img class="spot spot14" src="./images/spot1.svg" alt="">
+          <img class="spot spot15" src="./images/spot1.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>  
+</body>
+</html>

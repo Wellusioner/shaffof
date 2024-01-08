@@ -30,87 +30,58 @@
       text-decoration: none;
       font-size: 20px;
       line-height: 21px;
-/*      transition: color 0.1s linear;*/
+      background-color: #EAF6FC;
+      padding: 15px;
+      border-radius: 8px;
+      min-height: 120px;
+      transition: all 0.2s linear;
+    }
+    .group1 .project-title,
+    .group2 .project-title{
+      min-width: 450px;
     }
     .project-title:hover{
-      color: #5A87F9;
+      color: #0659B2;
+      background-color: #C1E6F9;
+      box-shadow: 0px 4px 8px 0px #003C821A;
     }
+/*
     .project-title:active{
       color: #31CC82;
     }
+*/
     .group1 .icon-wrapper{
       display: inline-block;
       text-align: end;
       width: auto;
       min-width: 100px;
       margin-left: 20px;
-      transform: scale(1);
-      transition: 0.1s linear;
+      transform: scale(0.8);
+      transition: 0.3s linear;
     }
     .group2 .icon-wrapper{
       display: inline-block;
       width: auto;
-      min-width: 86px;
+      min-width: 90px;
       margin-right: 20px;
-      transform: scale(1);
-      transition: 0.1s linear;
+      transform: scale(0.8);
+      transition: 0.3s linear;
     }
     .project-title:hover .icon-wrapper,
     .project-title:hover .bottom-icon{
-      transform: scale(1.2);
+      transform: scale(1);
     }
-    .group1 li:first-child a,
-    .group1 li:last-child a{
-      right: -60px;
-    }
-    
-    .group2 li:first-child a,
-    .group2 li:last-child a{
-      right: 60px;
-    }
+
     .project-group li:not(:last-child){
-      margin-bottom: 60px;
-    }
-    .icon-line{
-      position: absolute;
-      z-index: 1;
-    }
-    .group1 li:first-child .icon-line{
-      right: -41%;
-      top: 67%;
-    }
-    .group1 li:nth-child(2) .icon-line{
-      right: -35%;
-      top: 45%;
-    }
-    .group1 li:nth-child(3) .icon-line{
-      right: -34%;
-      top: 10%;
-    }
-    .group1 li:nth-child(4) .icon-line{
-      right: -42%;
-      top: -45%;
+      margin-bottom: 30px;
     }
     
-    .group2 li:first-child .icon-line{
-      left: -41%;
-      top: 67%;
-    }
-    .group2 li:nth-child(2) .icon-line{
-      left: -32%;
-      top: 45%;
-    }
-    .group2 li:nth-child(3) .icon-line{
-      left: -40%;
-      top: 10%;
-    }
-    .group2 li:nth-child(4) .icon-line{
-      left: -42%;
-      top: -45%;
+    .bottom-title{
+      min-width: 280px;
     }
     .bottom-icon{
-      transform: scale(1);
-      transition: 0.1s linear;
+      transform: scale(0.8);
+      transition: 0.3s linear;
     }
     
     .icon-alone{
@@ -131,7 +102,6 @@
       font-weight: bold;
       text-align: center;
       text-decoration: none;
-/*      transition: 0.1s linear;*/
     }
     .main-title:hover{
       color: #5A87F9;
@@ -144,11 +114,6 @@
       border-radius: 6px;
       transition: border 0.2s linear;
     }
-/*
-    .chart-item:hover .chart-img{
-      border: 1px solid #31CC82;
-    }
-*/
     
     .spot{
       position: absolute;
@@ -235,73 +200,64 @@
   </header>
   <main class="pt-5">
     <section class="py-5 mx-auto" style="max-width: 1700px;">
-     <div class="row">
+     <div class="row gx-1">
        <div class="col-lg-4">
          <ul class="project-group group1">
            <li  class="text-end">
-             <a class="d-inline-flex align-items-center project-title" href="https://ccnis.uz/" target="_blank">
-               <span>Қурилишда давлат назорати <br> ахборот тизими</span>
+             <a class="d-inline-flex align-items-center justify-content-end project-title" href="https://ccnis.uz/" target="_blank">
+               <span>Қурилишда давлат <br> назорати ахборот тизими</span>
                <span class="icon-wrapper"><img src="./images/icon9.svg" alt=""></span>
-               <span class="icon-line"><img src="./images/line1.svg" alt=""></span>
              </a>
            </li>
            <li  class="text-end">
-             <a class="d-inline-flex align-items-center project-title" href="https://sert.mc.uz/" target="_blank">
-               <span>Шаҳарсозлик ва уй-жой <br> коммунал хўжалиги <br> соҳаларида мутахассисларни <br> сертификатлаш <br> тизими</span>
+             <a class="d-inline-flex align-items-center justify-content-end project-title" href="https://sert.mc.uz/" target="_blank">
+               <span>Шаҳарсозлик ва уй-жой <br> коммунал хўжалиги <br> соҳаларида мутахассисларни <br> сертификатлаш тизими</span>
                <span class="icon-wrapper"><img src="./images/icon8.svg" alt=""></span>
-               <span class="icon-line"><img src="./images/line2.svg" alt=""></span>
              </a>
            </li>
-           <li  class="text-end"><a class="d-inline-flex align-items-center project-title" href="https://meninguyim.mjko.uz/" target="_blank">
-             <span>«Менинг уйим» <br> автоматлаштирилган биллинг <br> ахборот тизими</span>
+           <li  class="text-end"><a class="d-inline-flex align-items-center justify-content-end project-title" href="https://meninguyim.mjko.uz/" target="_blank">
+             <span>«Менинг уйим» <br> автоматлаштирилган <br> биллинг ахборот тизими</span>
              <span class="icon-wrapper"><img src="./images/icon7.svg" alt=""></span>
-             <span class="icon-line"><img src="./images/line3.svg" alt=""></span>
            </a></li>
-           <li  class="text-end"><a class="d-inline-flex align-items-center project-title" href="https://catalog.tmsiti.uz/" target="_blank">
+           <li  class="text-end"><a class="d-inline-flex align-items-center justify-content-end project-title" href="https://catalog.tmsiti.uz/" target="_blank">
              <span>Классификатор ва шнқлар</span>
              <span class="icon-wrapper"><img src="./images/icon6.svg" alt=""></span>
-             <span class="icon-line"><img src="./images/line4.svg" alt=""></span>
            </a></li>
          </ul>
        </div>
        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative">
          <a href="https://monitoring.mc.uz/" target="_blank" class="main-title">«Шаффоф Қурилиш» <br> миллий ахборот <br> тизими</a>
-         <img src="./images/circle.svg" alt="">
+         <img class="w-auto mw-100" src="./images/circle2.svg" alt="">
        </div>
        <div class="col-lg-4">
          <ul class="project-group group2">           
            <li>
              <a class="d-inline-flex align-items-center project-title" href="https://dx.mc.uz" target="_blank">
                <span class="icon-wrapper"><img src="./images/icon1.svg" alt=""></span>
-               <span>Қурилиш сохасидаги давлат <br> хизматлари ахборот тизими</span>
-               <span class="icon-line"><img src="./images/line9.svg" alt=""></span>
+               <span>Қурилиш сохасидаги <br> давлат хизматлари <br> ахборот тизими</span>
              </a>
            </li>
            <li>
              <a class="d-inline-flex align-items-center project-title" href="https://reyting.mc.uz" target="_blank">
                <span class="icon-wrapper"><img src="./images/icon2.svg" alt=""></span>
-               <span>Қурилиш-пудрат ташкилотларининг <br> рейтингини аниқлаш тизими</span>
-               <span class="icon-line"><img src="./images/line8.svg" alt=""></span>
+               <span>Қурилиш-пудрат <br> ташкилотларининг <br> рейтингини аниқлаш тизими</span>
              </a>
            </li>
            <li><a class="d-inline-flex align-items-center project-title" href="https://tender.mc.uz" target="_blank">
              <span class="icon-wrapper"><img src="./images/icon3.svg" alt=""></span>
-             <span>Қурилиш ишлари тендер <br> платформаси</span>
-             <span class="icon-line"><img src="./images/line7.svg" alt=""></span>
+             <span>Қурилиш ишлари <br> тендер платформаси</span>
            </a></li>
            <li><a class="d-inline-flex align-items-center project-title" href="https://new-ekspertiza.mc.uz" target="_blank">
              <span class="icon-wrapper"><img src="./images/icon4.svg" alt=""></span>
              <span>Лойиҳа-смета ҳужжатлари <br> экспертизаси</span>
-             <span class="icon-line"><img src="./images/line6.svg" alt=""></span>
            </a></li>
          </ul>
        </div>
      </div>
      <div class="text-center">
-       <a class="position-relative d-inline-flex align-items-center flex-column project-title" href="https://edo.ijro.uz/" target="_blank" style="top: -35px;">
-         <img class="bottom-icon mb-3" src="./images/icon5.svg" alt="">
-         <span>Хужжатлар айланиши</span>
-         <span class="icon-line icon-alone"><img src="./images/line5.svg" alt=""></span>
+       <a class="position-relative d-inline-flex align-items-center justify-content-center project-title bottom-title" href="https://edo.ijro.uz/" target="_blank" style="top: -25px;">
+         <img class="bottom-icon me-2" src="./images/icon5.svg" alt="">
+         <span class="text-start">Хужжатлар <br> айланиши</span>
        </a>
      </div>
     </section>

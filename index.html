@@ -10,6 +10,11 @@
     html, body{
       overflow-x: hidden;
       color: #1F2F56;
+      height: 100%;
+    }
+    body{
+      background: url('./images/bg.png') no-repeat center bottom;
+      background-size: cover;
     }
     .font-roboto{
       font-family: 'Roboto', sans-serif;
@@ -30,11 +35,12 @@
       text-decoration: none;
       font-size: 20px;
       line-height: 21px;
-      background-color: #EAF6FC;
+      background-color: #D8F1FD;
       padding: 15px;
       border-radius: 8px;
       min-height: 120px;
       transition: all 0.2s linear;
+      border: 1px solid #85D1E9;
     }
     .group1 .project-title,
     .group2 .project-title{
@@ -44,6 +50,7 @@
       color: #0659B2;
       background-color: #C1E6F9;
       box-shadow: 0px 4px 8px 0px #003C821A;
+      border: 1px solid #0659B2;
     }
 /*
     .project-title:active{
@@ -90,27 +97,35 @@
     }
     
     .main-title{
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
       font-family: 'Roboto', sans-serif;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 25px;
-      line-height: 26px;
+      font-size: 30px;
+      line-height: 32px;
       color: #1F2F56;
       font-weight: bold;
-      text-align: center;
       text-decoration: none;
+      text-align: center;
+      height: 300px;
+      width: 300px;
+      background: #D8F1FD;
+      border-radius: 50%;
+      transition: 0.2s linear;
     }
     .main-title:hover{
-      color: #5A87F9;
+      color: #0659B2;
+      background-color: #C1E6F9;
     }
     .main-title:active{
       color: #31CC82;
     }
     .chart-item .chart-img{
-      border: 1px solid #fff;
+/*      border: 1px solid #fff;*/
       border-radius: 6px;
       transition: border 0.2s linear;
     }
@@ -190,7 +205,7 @@
 <body>
   <div class="pt-2">
     <header class="position-relative">
-    <img class="position-absolute top-0 left-0 w-100" style="height: 116px;" src="./images/header2.png" alt="">
+    <img class="position-absolute top-0 left-0 w-100" style="height: 116px;" src="./images/header1.png" alt="">
     <div class="position-relative d-flex justify-content-between align-items-center pt-3 mx-auto px-2" style="max-width: 2000px;">
       <div class="position-relative" style="top: -5px;">
         <img src="./images/logo2.svg" alt="">
@@ -210,7 +225,7 @@
              </a>
            </li>
            <li  class="text-end">
-             <a class="d-inline-flex align-items-center justify-content-end project-title" href="https://sert.mc.uz/" target="_blank">
+             <a class="d-inline-flex align-items-center justify-content-end project-title" href="./images/talim.jpg" target="_blank">
                <span>Шаҳарсозлик ва уй-жой <br> коммунал хўжалиги <br> соҳаларида мутахассисларни <br> сертификатлаш тизими</span>
                <span class="icon-wrapper"><img src="./images/icon8.svg" alt=""></span>
              </a>
@@ -226,43 +241,43 @@
          </ul>
        </div>
        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative">
-         <a href="https://monitoring.mc.uz/" target="_blank" class="main-title">«Шаффоф Қурилиш» <br> миллий ахборот <br> тизими</a>
-         <img class="w-auto mw-100" src="./images/circle2.svg" alt="">
+         <a href="https://monitoring.mc.uz/login/email" target="_blank" class="main-title">«Мониторинг» <br> ахборот тизими</a>
+         <img class="w-auto mw-100" src="./images/circle1.svg" alt="">
        </div>
        <div class="col-lg-4">
          <ul class="project-group group2">           
            <li>
-             <a class="d-inline-flex align-items-center project-title" href="https://dx.mc.uz" target="_blank">
+             <a class="d-inline-flex align-items-center project-title" href="https://dx.mc.uz/login/withEmail" target="_blank">
                <span class="icon-wrapper"><img src="./images/icon1.svg" alt=""></span>
                <span>Қурилиш сохасидаги <br> давлат хизматлари <br> ахборот тизими</span>
              </a>
            </li>
+           <li><a class="d-inline-flex align-items-center project-title" href="https://new-ekspertiza.mc.uz/login/Sm9ob25naXIga2Ftcm8gaW5zdGFncmFtZGEgbyd0aXJpc2gga2VyZQ==" target="_blank">
+             <span class="icon-wrapper"><img src="./images/icon4.svg" alt=""></span>
+             <span>Лойиҳа-смета ҳужжатлари <br> экспертизаси</span>
+           </a></li>
+           <li><a class="d-inline-flex align-items-center project-title" href="https://tender.mc.uz/tender-list" target="_blank">
+             <span class="icon-wrapper"><img src="./images/icon3.svg" alt=""></span>
+             <span>Қурилиш ишлари <br> тендер платформаси</span>
+           </a></li>
            <li>
-             <a class="d-inline-flex align-items-center project-title" href="https://reyting.mc.uz" target="_blank">
+             <a class="d-inline-flex align-items-center project-title" href="https://reyting.mc.uz/global/umumiy" target="_blank">
                <span class="icon-wrapper"><img src="./images/icon2.svg" alt=""></span>
                <span>Қурилиш-пудрат <br> ташкилотларининг <br> рейтингини аниқлаш тизими</span>
              </a>
            </li>
-           <li><a class="d-inline-flex align-items-center project-title" href="https://tender.mc.uz" target="_blank">
-             <span class="icon-wrapper"><img src="./images/icon3.svg" alt=""></span>
-             <span>Қурилиш ишлари <br> тендер платформаси</span>
-           </a></li>
-           <li><a class="d-inline-flex align-items-center project-title" href="https://new-ekspertiza.mc.uz" target="_blank">
-             <span class="icon-wrapper"><img src="./images/icon4.svg" alt=""></span>
-             <span>Лойиҳа-смета ҳужжатлари <br> экспертизаси</span>
-           </a></li>
          </ul>
        </div>
      </div>
      <div class="text-center">
-       <a class="position-relative d-inline-flex align-items-center justify-content-center project-title bottom-title" href="https://edo.ijro.uz/" target="_blank" style="top: -25px;">
+       <a class="position-relative d-inline-flex align-items-center justify-content-center project-title bottom-title" href="https://open-data.mc.uz/map" target="_blank" style="top: -25px;">
          <img class="bottom-icon me-2" src="./images/icon5.svg" alt="">
-         <span class="text-start">Хужжатлар <br> айланиши</span>
+         <span class="text-start">Объектлар <br> харитаси</span>
        </a>
      </div>
     </section>
   </main>
-  <section id="chart-section" class="mx-auto py-3 px-2" style="max-width: 2000px;">
+  <section id="chart-section" class="mx-auto py-3 px-2 pt-5" style="max-width: 2000px;">
     <div id="chart-group" class="row flex-nowrap">
       <div class="chart-item col-auto active">
         <div class="position-relative">
